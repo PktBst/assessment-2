@@ -31,15 +31,25 @@ const navslide=()=>{
     });
 }
 
-navslide();
+
 
 //blog creater
-const blogAdder=()=>{
     const create=document.getElementById('create');
     const title=document.getElementById('input_title');
     const body=document.getElementById('input_body');
 
     create.addEventListener('click',()=>{
-        
+    const div = document.createElement('div')
+    const div2 = document.createElement('div')
+    div.setAttribute('class', 'title_blog')
+    div2.setAttribute('class', 'body_blog')
+    div.textContent = title.value;
+    div2.textContent = body.value;
+    console.log(div)
+    div.appendChild(div2);
+    document.getElementById('BOX').prepend(div)
+
     })
-}
+
+
+navslide();

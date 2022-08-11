@@ -5,6 +5,31 @@ body{
     font-family: sans-serif;
     
 }
+.addblog{
+    width: 30%; 
+    margin:0.5em;
+    padding:3% ;
+    background-color: rgba(238, 244, 243, 0.323);
+    border-radius: 35px;
+}
+#NEO_BOX{
+    background-color: rgba(238, 244, 243, 0.097);
+    height: 300px;
+    width: auto;
+}
+#input_title{
+    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px; ;
+}
+#input_body{
+    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;
+}
+.title_blog{
+    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px ;font-size: 30px;color: aliceblue;
+}
+.body_blog{
+    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;font-size: 17px;
+}
+
 .logo{
     filter:invert();
     height: 40px;
@@ -69,6 +94,9 @@ label.logo{
     display: none;
     cursor: pointer;
 }
+
+
+
 /* footer */
 footer{
     display: flex;
@@ -106,6 +134,8 @@ footer ul li a{
 }
 
 
+
+
 @media screen and (max-width:600px) {
     body{
         overflow-x: hidden;
@@ -132,6 +162,7 @@ footer ul li a{
         transform: translateX(0%);
 
     }
+
 
     
 }
