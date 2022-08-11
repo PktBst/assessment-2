@@ -53,6 +53,50 @@ label.logo{
 
 }
 
+.burger div{
+    width:28px;
+    height: 4px;
+    background-color:white;
+    border-radius: 20%;
+    margin: 5px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
 blog-panel{
     background-color: brown;
+}
+
+@media screen and (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        flex-direction: column;
+        background-color: aquamarine;
+        display: flex;
+        top: 3.7vh;
+        height: 95vh;
+        width: 10vh;
+        transform: translateX(100%); 
+        transition: transform 0.5s ease-in;
+        align-items: center;
+    }
+    .nav-links li{
+        opacity: 0%;
+    }
+     .burger{
+        display: block;
+     }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+
+    
 }
