@@ -1,9 +1,13 @@
 body{
     background-image:url(assets/bg.jpg);
-    padding: 0% 0%;
-    margin: 0%;
+    padding: 0px;
+    margin: 0px;
     font-family: sans-serif;
     
+}
+.logo{
+    filter:invert();
+    height: 40px;
 }
 
 /* nav bar */
@@ -65,10 +69,42 @@ label.logo{
     display: none;
     cursor: pointer;
 }
-
-blog-panel{
-    background-color: brown;
+/* footer */
+footer{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-around;
+    
 }
+footer ul li{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 36px;
+    padding: 3px;
+}
+footer ul li:hover{
+    background-color: aqua;
+}
+footer ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.socials a img{
+    height: 20px;
+    width: 25px;
+    filter: invert(100%);
+    padding: 5px;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+}
+.socials a:hover{
+    background-color:red;
+    border-radius: 40%;
+}
+
 
 @media screen and (max-width:600px) {
     body{
@@ -87,15 +123,14 @@ blog-panel{
         transition: transform 0.5s ease-in;
         align-items: center;
     }
-    .nav-links li{
-        opacity: 0%;
-    }
+
      .burger{
         display: block;
      }
 
     .nav-active{
         transform: translateX(0%);
+
     }
 
     

@@ -32,3 +32,14 @@ const navslide=()=>{
 }
 
 navslide();
+
+//blog creater
+const blogAdder=()=>{
+    const create=document.getElementById('create');
+    const title=document.getElementById('input_title');
+    const body=document.getElementById('input_body');
+
+    create.addEventListener('click',()=>{
+        
+    })
+}
