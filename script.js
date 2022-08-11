@@ -9,7 +9,7 @@ xhr.onreadystatechange  = () => {
         var output = ''
         for(let i=0; i < objectResponse.length; i++) {
                 output += `
-               <div style="width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;>
+               <div style="width: 65%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;>
                 <h1>${objectResponse[i].title}</h1>
                     ${objectResponse[i].body} 
                </div>
