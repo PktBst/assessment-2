@@ -1,33 +1,51 @@
 body{
-    background-image:url(assets/bg.jpg);
+    background: hsla(225, 54%, 14%, 1);
+
+    background: linear-gradient(270deg, hsla(225, 54%, 14%, 1) 0%, hsla(225, 20%, 37%, 1) 20%, hsla(0, 0%, 0%, 1) 79%);
+
+    background: -moz-linear-gradient(270deg, hsla(225, 54%, 14%, 1) 0%, hsla(225, 20%, 37%, 1) 20%, hsla(0, 0%, 0%, 1) 79%);
+
+    background: -webkit-linear-gradient(270deg, hsla(225, 54%, 14%, 1) 0%, hsla(225, 20%, 37%, 1) 20%, hsla(0, 0%, 0%, 1) 79%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#101935", endColorstr="#4B5470", GradientType=1 );
     padding: 0px;
     margin: 0px;
     font-family: sans-serif;
+    padding: 8% 0 0 0;
+    overflow-x: hidden;
     
 }
-.addblog{
-    width: 30%; 
+.addblog h1{
+    align-items: center;
+    /* flex-basis: 100%; */
+}
+.addblog{   
+    width: 9-0-0%; 
     margin:0.5em;
-    padding:3% ;
+    padding:3%;
     background-color: rgba(238, 244, 243, 0.323);
-    border-radius: 35px;
+    color: aliceblue;
 }
-#NEO_BOX{
-    background-color: rgba(238, 244, 243, 0.097);
-    height: 300px;
-    width: auto;
-}
-#input_title{
-    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px; ;
-}
-#input_body{
-    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;
+
+input{
+     margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;width:90%; font-size: large;color: aliceblue;
 }
 .title_blog{
-    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px ;font-size: 30px;color: aliceblue;
+    width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px ;font-size: 30px;color: aliceblue;font-weight: bold;
 }
 .body_blog{
     width: 30%; margin:0.5em; padding:3% ;background-color: rgba(238, 244, 243, 0.323); border-radius: 35px;font-size: 17px;
+}
+#create{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 35px;
+    padding: 10px;
+    transition: 0.35s ease-in-out;
+}
+
+#create:hover{
+    box-shadow: 5px 5px ;
 }
 
 .logo{
@@ -35,17 +53,21 @@ body{
     height: 40px;
 }
 
+
 /* nav bar */
 nav{
+
     display: flex;
-    background-color: rgb(12, 15, 56);
+    background-color: rgb(31, 31, 31);
     justify-content: space-evenly;
     color: aliceblue;
-    padding: 2px 0px 0px 0px;
+    padding: 2% 2%;
     margin: 0% 0%;
     position: fixed;
     width: 100%;
+    top: 0px;
     padding: 1px 2px 1px 10px;
+    font-size: 18px;
 }
 nav ul li a{
     text-decoration: none;
@@ -53,7 +75,10 @@ nav ul li a{
 }
 nav ul li {
     list-style: none;
+    padding: 3px 3px;
     display: inline-block;
+    border-radius: 6px;
+    transition: 0.35s ease-in-out;
     
 }
 nav ul{
@@ -62,13 +87,32 @@ nav ul{
     width: 40%;
 }
 nav ul li:hover{
-    background: rgb(33, 46, 79);
+    background: rgba(219, 219, 219, 0.227);
 }
-label.logo{
-    color: aquamarine;
-    font-size: 35px;
-    font-weight: 2;
+#logo{
+    filter: invert();
+    height: 42px;
+    position: relative;
+    top: 10px;
+    transition: 0.3s ease-in;
 }
+#logo:hover{
+    height: 45px;
+}
+#nav_logo{
+    font-size: 30px; position: relative;
+}
+
+#intro{
+    height: 50%;
+    width: auto;
+    background-image: url(assets/intro.jpg);
+    color: aliceblue;
+    padding:4%;
+    font-size: 40px;
+    text-shadow: rgba(0, 0, 0, 0.901);
+}
+
 #BOX{
     background-color: rgba(109, 206, 190, 0);
     border-radius: 35px;
@@ -109,13 +153,15 @@ footer ul li{
     display: inline-block;
     border-radius: 36px;
     padding: 3px;
+    transition: 0.35s ease-in-out;
 }
 footer ul li:hover{
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.388);
 }
 footer ul li a{
     text-decoration: none;
     color: aliceblue;
+    
 }
 .socials a img{
     height: 20px;
@@ -128,8 +174,11 @@ footer ul li a{
     justify-content: center;
     align-self:center;
 }
+.socials a{
+    transition: 0.35s ease-in-out;
+}
 .socials a:hover{
-    background-color:red;
+    background-color:rgba(255, 255, 255, 0.282);
     border-radius: 40%;
 }
 
@@ -137,6 +186,12 @@ footer ul li a{
 
 
 @media screen and (max-width:600px) {
+    .title_blog{
+        width: 90%;
+    }
+    .body_blog{
+        width: 90%;
+    }
     body{
         overflow-x: hidden;
     }
@@ -144,10 +199,10 @@ footer ul li a{
         position: absolute;
         right: 0px;
         flex-direction: column;
-        background-color: aquamarine;
+        background-color: rgba(244, 244, 244, 0.749);
         display: flex;
-        top: 3.7vh;
-        height: 95vh;
+        top: 4.6vh;
+        height: 97vh;
         width: 10vh;
         transform: translateX(100%); 
         transition: transform 0.5s ease-in;
@@ -156,6 +211,9 @@ footer ul li a{
 
      .burger{
         display: block;
+        position: relative;
+        right: -80px;
+        top:8px;
      }
 
     .nav-active{

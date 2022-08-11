@@ -8,17 +8,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>voyage</title>
 </head>
 <body>
     <nav>
         
-        <label class="logo"><img  class='logo'src="assets/logo.svg" alt="*"> voyage</label>
+        <label id="nav_logo"><img  id='logo'src="assets/logo.svg" alt="*"> VOYAGE</label>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">feedback</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="#addblog">Create</a></li>
+            <li><a href="#BOX">Read Blogs</a></li>
+            <li><a href="#footer">About</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -26,7 +26,8 @@
             <div class="line3"></div>
         </div>
     </nav>
-    <div class="addblog">
+    <div id="intro"> <h1>Welcome to voyage!</h1> <h3>experience stories! </h3></div>
+    <div class="addblog" id="addblog">
         <h1>create your own blog</h1>
             <label for="input_title">Title:</label><input id="input_title" type="text">
             <label for="input_body">Content:</label><input id="input_body" type="text">
@@ -35,7 +36,7 @@
     <div id="BOX">
         empty    
     </div>
-    <footer>
+    <footer id="footer">
 
         <ul class="foot-links">
             <div class="socials">
